@@ -38,8 +38,6 @@ display: none;
 }
 
 
-
-
 /* my styling */
 .contianer{
     max-width: 1160px;
@@ -63,6 +61,7 @@ display: none;
     gap: 15%;
     padding-top: 3%;
     font-family: var(--poppins-font);
+    align-items: center;
 }
 
 .hero-section-container .column1{
@@ -72,7 +71,7 @@ display: none;
     width: 100%;
 }
 
-.hero-section-container .column1 > .inner-text{
+.inner-text{
     font-weight: 300;
     color: var(--color-secondary-bg);
 }
@@ -86,6 +85,7 @@ display: none;
     font-weight: 500;
     font-size: 15px;
     line-height: 124.5%;
+    /* align-items: center; */
 }
 
 .hero-section-container .column2 > a{
@@ -131,7 +131,7 @@ display: none;
     line-height: 120.5%;
 }
 
-.hero-section-context .column2-1 > p, .contianer_context > p, .app-rate-col2 > p{
+.hero-section-context .column2-1 > p, .contianer_context > p, .app-rate-col2 > p,.col2-star-rating p{
     font-family: var(--roboto-font);
     font-weight: 300;
     font-size: 15px;
@@ -230,6 +230,67 @@ display: none;
     color: var(--color-secondary-bg);
 }
 
+.col2-star-rating{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.col2-star-rating img{
+    width: 30%;
+    height: 30%;
+    margin-top: 20px;
+}
+
+.col2-star-rating p{
+    margin-top: 20px;
+    line-height: 2rem;
+    padding-right: 10px;
+}
+
+.col2-star-rating .inner-text{
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+/* footer */
+
+footer{
+    font-family: var(--poppins-font);
+    height: auto;
+    min-height: 50vh;
+}
+
+.footer-col{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 5%;
+}
+
+.footer-col2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 120px;
+}
+
+a,p{
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.footer-col1 h4{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.footer-col2-1 > a, .footer-col2-2 > a, .footer-col2-3 > a{
+    color: #101B4F;
+}
+
+
+.footer-bottom{
+    margin: 40px auto 20px auto;
+}
+
 /* ============= MEDIA QUERY (Medium Devices) =========== */
 
 @media screen and (max-width: 1024px){
@@ -287,6 +348,11 @@ display: none;
 .app-rate-col2{
     padding: 0% 0% 0% 10%;
 }
+.col2-star-rating p{
+    margin-top: 20px;
+    line-height: 1.3rem;
+}
+
 }
 
 
