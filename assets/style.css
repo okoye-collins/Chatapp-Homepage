@@ -258,6 +258,7 @@ footer{
     font-family: var(--poppins-font);
     height: auto;
     min-height: 50vh;
+    padding-top: 20px;
 }
 
 .footer-col{
@@ -287,8 +288,11 @@ a,p{
 }
 
 
-.footer-bottom{
-    margin: 40px auto 20px auto;
+.footer-bottom p{
+    margin-top: 60px;
+    font-weight: 300;
+    font-size: 10px;
+    text-align: center;
 }
 
 /* ============= MEDIA QUERY (Medium Devices) =========== */
@@ -353,6 +357,26 @@ a,p{
     line-height: 1.3rem;
 }
 
+/* footer */
+.footer-col1{
+    margin: 0 auto;
+}
+
+.footer-col2{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+
+.footer-col2-1 > a, .footer-col2-2 > a, .footer-col2-3 > a{
+    display: block;
+    line-height: 2rem;
+}
+
+.footer-bottom p{
+    font-size: 12px;
+}
+
+
 }
 
 
@@ -414,6 +438,21 @@ a,p{
         padding-top: 10%;
         padding-right: 20px;
         font-size: 40px;
+    }
+
+    /* footer */
+
+    .footer-col{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        margin: 0 25px;
+    }
+    .footer-col1{
+        margin: 0;
+    }
+    .footer-bottom p{
+        font-size: 8px;
     }
 
 }
